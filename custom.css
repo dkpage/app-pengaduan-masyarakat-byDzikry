@@ -1,0 +1,515 @@
+
+:root{
+    --gradient-bg : linear-gradient(to bottom right, #007bff, #28a745);
+}
+
+/* CUSTOM CSS IN ALL-PAGE  */
+
+body{
+    min-height: 100%s;
+}
+
+
+.gradient-bg{
+    background: var(--gradient-bg);
+    color: #ffffff;
+}
+
+/* BACKGROUND WITH IMAGE  */
+.bg-image-gradient{
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.bg-image-gradient:before {
+    content: "";
+    background: var(--gradient-bg);
+    opacity: 80%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+.bg-image-gradient .container {
+    position: relative;
+    height: 100%;
+    margin-top: 80px;
+  }
+.bg-image-gradient .sec-title{
+    color: #ffffff;
+}
+/* SECTION CUSTOM  */
+
+section.sec-30{
+    margin: 30px 0 30px 0;
+}
+
+section .container{
+    display: grid;
+}
+
+section.sec-20{
+    margin: 20px 0 20px 0;
+}
+section.sec-10{
+    margin: 10px 0 10px 0;
+}
+
+
+.sec-title{
+    margin: 30px 0 30px 0;
+}
+
+/* CONTENT AREA  */
+.content{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+
+
+/* END  */
+
+/* COLOR SCHEME */
+.bg-primary{
+    background-color: #1982c4;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* .header, .statistik{
+    background-color: #1982c4;
+    color: #fff;
+} */
+
+/* LOADER  */
+
+#loader {
+    z-index: 2000;
+    text-align: center;
+    background-color: #ffffffbe;
+    transition: opacity 200ms linear;
+}
+
+#loader .loader-img{
+    position: fixed;
+}
+
+#loader .loader-img img{
+    height: 75px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    
+}
+
+#loader.loader-hide{
+    opacity: 0;
+}
+
+#loader.d-none{
+    height: 0;
+    padding: 0;
+}
+
+
+/* HEADER  */
+#header{
+    height: 10vh;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and(max-width:685px) {
+    #header {
+        position: relative;
+    }
+}
+
+.navbar-brand{
+    font-size: 22pt;
+    /* color: #fff; */
+}
+
+.navbar-item .nav-link{
+    color: #fff;
+}
+
+
+
+.user-menu{
+    height: 0;
+    width: auto;
+    transition: height 200ms linear;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.user-menu .user-menu-panel{
+    width: auto;
+    overflow: hidden;
+}
+
+.user-menu.show{
+    height: 130px;
+}
+
+
+@media only screen and (max-width:760px) {
+    .mobile-menu{
+        position: fixed;
+        display: block;
+        background-color: #fff;
+        width: 80%;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        padding: 20px;
+        box-shadow: 0 0.5rem 1rem #0000001c!important;
+        transition: margin-left 500ms linear;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .mobile-menu.menu-hide{
+        margin-left: -100%;
+    }
+    
+    .mobile-menu ul{
+        display: block;
+    }
+    
+    .mobile-menu a{
+        display: block;
+        margin-top: 10px;
+    }
+
+    #top-menu.intop #menuShow{
+        color: white;
+    } 
+    
+    
+}
+
+
+/* MENU IN INDEX VIEW  */
+@media screen and (min-width:769px) {
+    #top-menu.intop h3, #top-menu.intop span, #top-menu.intop i.fa-caret-down{
+        color: #fff;
+    } 
+}
+
+#top-menu.intop{
+    height: 100px;
+}
+
+#top-menu.scroll-top{
+    height: 85px;
+}
+
+#top-menu{
+    transition: all 0.5s ease-in-out;
+    
+}
+
+/* LOGIN AND REGISTER CSS  */
+
+@media screen and (min-width:769px) {
+    #banner-form {
+        height: 500px;
+    }
+}
+
+#banner-form {
+    background-image: url('admin/assets/img/bg-index.jpg');
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    vertical-align: middle !important;
+}
+
+#banner-form::before {
+    content: "";
+    opacity: 70%;
+    background: linear-gradient(to bottom right, #007bff, #28a745);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#banner-form div {
+    position: inherit;
+}
+
+#form {
+    height: 500px;
+    padding: 50px;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* hide scroll bar IE & Edge */
+    scrollbar-width: none; /* hide scroll bar  Firefox */
+}
+
+#form::-webkit-scrollbar {
+    display: none; /* hide scroll bar Chrome, Safari dan Opera*/
+  }
+
+/* END LOGIN REGISTER  */
+
+
+
+/* HERO BANNER  */
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    /* position: fixed; */
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  #hero:before {
+    content: "";
+    background: linear-gradient(to bottom, #007bff, #28a745);
+    opacity: 85%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #hero .container {
+    position: relative;
+    height: 100%;
+    margin-top: 80px;
+  }
+
+  #formLaporan .container{
+    position: relative;
+  }
+
+  #formLaporan{
+    margin-top: -250px;
+  }
+  /* @media only screen and(max-width:768px) {
+    #hero {
+        padding-top: 80px;
+    }
+} */
+
+
+/* TIMELINE SECTION  */
+
+.timeline-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-area .md-icon, .timeline-area .sm-icon{
+    font-size: 28pt;
+    color: #3f3f3f;
+}
+
+.timeline-area .sm-icon{
+    display: none;
+}
+
+.timeline-area .timline-box{
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    row-gap: 20px;
+    padding: 1rem;
+    margin: 0 10px 0 10px;
+}
+
+.timline-box .icon-box{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timline-box .icon-box i{
+    font-size: 28pt;
+}
+
+/* ------ IN MEDIA QUERY UNDER 768px ------  */
+@media screen and (max-width:768px) {
+    .timeline-area{
+        display: grid;
+        justify-items: center;
+        row-gap: 10px;
+    }
+    .timeline-area .md-icon{
+        display: none;
+    }
+    .timeline-area .sm-icon{
+        display: block;
+    }
+    .timeline-area .timline-box{
+        width: 80%;
+        margin: 10px 0 10px 0;
+    }
+}
+
+
+/* END TIMLINE SECTION  */
+
+/* JUMLAH LAPORAN STYLE  */
+#jml-laporan .container{
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    row-gap: 10px;
+    padding: 40px 0 40px 0;
+}
+#jml-laporan h1{
+    font-size: 48pt;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+#jml-laporan span{
+    font-size: 18pt;
+    color: #fff;
+}
+
+/* END JUMLAH LAPORAN  */
+
+/* STATISTIK STYLE */
+.statistik-area{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 10px;
+}
+
+
+.statistik-area .statistik-box{
+    /* width: 150px; */
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    /* row-gap: 20px; */
+    padding: 1rem;
+    margin: 0 10px 0 10px;
+}
+
+.statistik-box .stat-icon-box{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistik-box .stat-icon-box i{
+    font-size: 28pt;
+}
+
+/* ------ IN MEDIA QUERY UNDER 768px ------  */
+@media screen and (max-width:768px) {
+    /* .statistik-area{
+        display: grid;
+        justify-items: center;
+        row-gap: 10px;
+    } */
+    .statistik-area .statistik-box{
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+/* END STATISTIK */
+
+/* LAPORAN TERBARU  */
+
+.lap-new-area{
+    width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.lap-new-area::-webkit-scrollbar {
+    display: none;
+  }
+
+.lap-new-area .lap-box{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.lap-new-area .lap-box .icon-status{
+    font-size: 18pt;
+    /* margin-bottom: 5px; */
+}
+
+/* END LAPORAN TERBARU  */
+
+
+/* SOCIAL BUTTON  */
+
+/* Style all font awesome icons */
+
+  .social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 8px;
+  }
+  
+  .social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    color: #fff;
+    background: transparent;
+    text-align: center;
+    padding: 20px;
+    transition: all 200ms linear;
+  }
+
+  .social-button:hover{
+    background: #fff;
+  }
+  
+/* END SOCIAL BUTTON  */
+
+/* FOOTER  */
+.credit{
+    font-size: small;
+}
+/* END FOOTER  */

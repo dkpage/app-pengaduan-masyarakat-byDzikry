@@ -1,0 +1,148 @@
+/* THIS FILE IS CUSTOM CSS IN APPLICATION  */
+
+/* STYLING CUSTOM FOR BADGE IN TAG <td>  */
+
+td .badge{
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+}
+
+td .badge.badge-primary, td .badge.bg-primary{
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+td .badge.badge-secondary, td .badge.bg-secondary{
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+td .badge.badge-warning, td .badge.bg-warning{
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+td .badge.badge-success, td .badge.bg-success{
+  border-color: var(--success);
+  color: var(--success);
+}
+
+td .badge.badge-danger, td .badge.bg-danger{
+  border-color: var(--danger);
+  color: var(--danger);
+}
+  
+td a.badge.badge-primary:hover, td a.badge.bg-primary:hover{
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+td a.badge.badge-secondary:hover, td a.badge.bg-secondary:hover{
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+td a.badge.badge-warning:hover, td a.badge.bg-warning:hover{
+  background-color: var(--warning);
+  color: var(--white);
+}
+
+td a.badge.badge-success:hover, td a.badge.bg-success:hover{
+  background-color: var(--success);
+  color: var(--white);
+}
+
+td a.badge.badge-danger:hover, td a.badge.bg-danger:hover{
+  background-color: var(--danger);
+  color: var(--white);
+}
+  
+  /* SIDEBAR CUSTOM CSS  */
+  
+  .user-avatar{
+    width:30px;
+    height:30px;
+    background-position: top center;
+    background-size: cover;
+  }
+  
+  .user-opt{
+    height: max-content;
+  }
+  
+ .user-opt .user-opt-panel{
+    position: absolute;
+    padding: 0;
+    overflow: hidden;
+    height: 0;
+    transition: height 200ms linear;
+  }
+  
+  .user-opt .user-opt-panel.show{
+    width: auto;
+    height: 120px;
+    
+  }
+  
+  @media screen and (max-width:760px) {
+    .user-opt .user-opt-panel{
+      position: absolute;
+      padding: 0;
+      overflow: hidden;
+      height: 0;
+      transition: height 200ms linear;
+      left: 2%;
+      width: 96%;
+    }
+    .user-opt .user-opt-panel.show{
+      display: block;
+      height: 150px;
+      left: 2%;
+      width: 96%;
+    }
+  }
+  
+  /* DASHBOARD CUSTOM CSS  */
+  
+  .box-angka{
+    border-left-style: solid;
+    border-color: var(--green);
+  }
+  
+  .box-angka h3{
+    color: var(--green);
+  }
+
+
+  /* HALAMAN GENERATE CSS  */
+
+  #form-pilih{
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.5s;
+  }
+
+  #form-pilih.sembunyi{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+  }
+
+
+  /* HALAMAN PRINT DOKUMEN  */
+  /* .print-canvas {
+    background-color: #bfbfbf;
+}
+
+.print-preview {
+    width: 100px;
+    height: 200px;
+}
+
+@media print {
+    .print-preview-canvas {
+        background-color: red;
+    }
+} */
